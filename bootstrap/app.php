@@ -27,7 +27,7 @@ $container['view'] = function($container) {
 
 // Bind for routes
 $container['HomeController'] = function($container) {
-    return new \App\Controllers\HomeController;
+    return new \App\Controllers\HomeController($container);
 };
 
 
